@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints prefWidth="200" />
+</columnConstraints>
+<rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="600.0" vgrow="SOMETIMES" />
+</rowConstraints>
+<children>
+    <Pane fx:id="graphPane" minWidth="1000" prefHeight="700.0">
+        <children>
+            <TextField fx:id="enterNumber" layoutX="400.0" layoutY="300.0" opacity="0.0" />
+            <Label fx:id="addRoot" layoutX="415.0" layoutY="41.0" style="-fx-border-color: #cccccc; -fx-border-radius: 10px;" text="Root Node" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="25.0" />
+                </font>
+                <padding>
+                    <Insets left="20.0" right="20.0" />
+                </padding>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+        </children>
+    </Pane>
+
+    <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.2);" GridPane.columnIndex="1">
+        <children>
+            <Label fx:id="addMode" prefWidth="200.0" text="Add Mode" textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </padding>
+               <effect>
+                  <Glow level="0.5" />
+               </effect></Label>
+            <Label fx:id="displayMode" prefWidth="200.0" text="Display Mode" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </padding>
+               <effect>
+                  <Glow level="0.5" />
+               </effect></Label>
+            <Label fx:id="editMode" prefWidth="200.0" text="Edit Mode" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </padding>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+
+            <Label fx:id="dfsMode" prefWidth="200.0" text="DFS Mode" textFill="WHITE">
+                <padding>
+                    <Insets bottom="10.0" left="20.0" top="10.0" />
+                </padding>
+                <effect>
+                    <Glow level="0.5" />
+                </effect>
+            </Label>
+
+            <Label fx:id="bfsMode" prefWidth="200.0" text="BFS Mode" textFill="WHITE">
+                <padding>
+                    <Insets bottom="10.0" left="20.0" top="10.0" />
+                </padding>
+                <effect>
+                    <Glow level="0.5" />
+                </effect>
+            </Label>
+
+            <Label fx:id="bestFirst" prefWidth="200.0" text="Best First Search" textFill="WHITE">
+                <padding>
+                    <Insets bottom="10.0" left="20.0" top="10.0" />
+                </padding>
+                <effect>
+                    <Glow level="0.5" />
+                </effect>
+            </Label>
+
+            <Label fx:id="moveUp" prefWidth="200.0" text="Move Up" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </padding>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin></Label>
+        </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+         <effect>
+            <Glow />
+         </effect>
+    </VBox>
+</children>
+</GridPane>
